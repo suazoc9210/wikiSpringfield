@@ -5,33 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki Springfield</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <header align="center">
-        <h1>Bienvenido a la Wiki de Springfield</h1>
-        <hr>
-        <p>
-            El centro de información definitivo sobre los habitantes de la ciudad de <strong>Los Simpson.</strong><br>
-            Este proyecto ha sido construido de forma estática utilizando la estructura básica de HTML.
-        </p>
-        <img src="/img/ImagenSimpson.webp" width="35%">
-    </header>
-    <hr>
-
-    <h2 align="center">Menu de navegacion</h2>
-    <nav align="center">
-        <a href="index.html">Inicio</a>
-        <a href="homero.html">Ficha de Homero Simpson</a>
-        <a href="familiasimpson.html">Familia Simpson</a>
+    <!--MENU DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/homero.html">Homero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/familiasimpson.html">Familia Simpson</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <hr>
+
+    <div class="todo">
+        <div class="contenedor-principal">
+            <header class="header-wiki text-center">
+                <div class="container">
+                    <h1 class="display-4">Bienvenido a la Wiki de Springfield</h1>
+                    <p>
+                        El centro de información definitivo sobre los habitantes de la ciudad de <strong>Los
+                            Simpson.</strong><br>
+                        Este proyecto ha sido construido de forma estática utilizando la estructura básica de HTML.
+                    </p>
+                    <img src="/img/ImagenSimpson.webp" alt="Imagen Homero Simpson portada"
+                        class="img-simpson img-fluid mt-3" style="width: 100%; max-width: 500px;">
+                </div>
+            </header>
+        </div>
+
+        <div class="d-flex justify-content-center flex-wrap gap-2 my-2">
+            <div class="card-personaje card text-center" style="width: 15rem; margin: 0 auto;">
+                <a href="/pages/homero.html">
+                    <div class="img-personaje">
+                        <img src="/img/SimpsonHomero.webp" class="img-fluid" alt="Homero Simpson">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Homero Simpson </h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-personaje card text-center" style="width: 15rem; margin: 0 auto;">
+                <a href="/pages/homero.html">
+                    <div class="img-personaje">
+                        <img src="/img/marge.webp" class="img-fluid" alt="Marge Simpson">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Marge Simpson </h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-personaje card text-center" style="width: 15rem; margin: 0 auto;">
+                <a href="/pages/homero.html">
+                    <div class="img-personaje">
+                        <img src="/img/bart.webp" class="img-fluid" alt="Bart Simpson">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bart Simpson </h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-personaje card text-center" style="width: 15rem; margin: 0 auto;">
+                <a href="/pages/homero.html">
+                    <div class="img-personaje">
+                        <img src="/img/lisa.webp" class="img-fluid" alt="Lisa Simpson">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Lisa Simpson </h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-personaje card text-center" style="width: 15rem; margin: 0 auto;">
+                <a href="/pages/homero.html">
+                    <div class="img-personaje">
+                        <img src="/img/maggie.webp" class="img-fluid" alt="Maggie Simpson">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Maggie Simpson </h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <div class="container text-center">
+                    <p class="mb-0">Sitio desarollado por <strong>Carlos Suazo</strong> - 2026 ©</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-<footer>
-    <div align="center">
-        <p>Sitio desarollado por <strong>Carlos Suazo</strong> - 2026 ©</p>
-    </div>
-</footer>
 
 </html>
